@@ -78,7 +78,7 @@ class Database
             $result = $req->execute([
                 'YOUR PARAMETERS'
             ]);
-            return $result;
+            return 'OK';
         } catch (PDOException $e) {
             return 'ERROR: ' . $e->getMessage();
         } catch (ParseError $e) {
@@ -101,7 +101,7 @@ class Database
             //get the result
 
             //and return it !
-            //return 
+            //return the post Object !!
         } catch (PDOException $e) {
             return 'ERROR: ' . $e->getMessage();
         } catch (ParseError $e) {
@@ -121,10 +121,7 @@ class Database
             $result = $req->execute([
                 'YOUR PARAMETERS'
             ]);
-            //get the result
-
-            //and return it !
-            //return 
+            return 'OK';
         } catch (PDOException $e) {
             return 'ERROR: ' . $e->getMessage();
         } catch (ParseError $e) {
