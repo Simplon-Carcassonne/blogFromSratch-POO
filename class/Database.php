@@ -112,6 +112,23 @@ class Database
     /***********************************************/
     function deletePost($idPost)
     {
-        //TODO : implement this function
+        $sql = 'YOUR SQL CODE'; //write your SQL code
+        $req = $this->db->prepare($sql); //already prepared $req
+
+        //execute the $req with parameters
+        //keep try/catch for bot's validation
+        try {
+            $result = $req->execute([
+                'YOUR PARAMETERS'
+            ]);
+            //get the result
+
+            //and return it !
+            //return 
+        } catch (PDOException $e) {
+            return 'ERROR: ' . $e->getMessage();
+        } catch (ParseError $e) {
+            return 'ERROR: ' . $e->getMessage();
+        }
     }
 }
